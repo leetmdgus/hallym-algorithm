@@ -49,7 +49,7 @@ int main()
 		{
 			for (int k = 1; k <= n; ++k)
 			{
-                arr[j][k] = min(arr[j][k], arr[j][i] + arr[i][k]);
+                		arr[j][k] = min(arr[j][k], arr[j][i] + arr[i][k]);
 			}
 		}
 	}
@@ -58,8 +58,8 @@ int main()
 	{
 		for (int j = 1; j <= n; ++j)
 		{
-            cout << ((arr[i][j] == INF) ? 0 : arr[i][j]) << " ";
+            		cout << ((arr[i][j] == INF) ? 0 : arr[i][j]) << ' ';
 		}
-		cout << "\n";
+		cout << '\n';
 	}
 }
